@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31205.134
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Smarti18n", "Smarti18n\Smarti18n.csproj", "{B8D85796-60EB-429D-9B5E-1B17B2695ED5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Smarti18n.Tester", "Smarti18n.Tester\Smarti18n.Tester.csproj", "{8EC6E704-DFB3-490C-97E1-77511A6EE464}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B8D85796-60EB-429D-9B5E-1B17B2695ED5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8D85796-60EB-429D-9B5E-1B17B2695ED5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8D85796-60EB-429D-9B5E-1B17B2695ED5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8D85796-60EB-429D-9B5E-1B17B2695ED5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8EC6E704-DFB3-490C-97E1-77511A6EE464}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8EC6E704-DFB3-490C-97E1-77511A6EE464}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8EC6E704-DFB3-490C-97E1-77511A6EE464}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8EC6E704-DFB3-490C-97E1-77511A6EE464}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6BE3D79A-6D6F-4072-9252-2412B5725E82}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,46 @@
+﻿<Window x:Class="Smarti18n.Tester.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Smarti18n.Tester"
+        mc:Ignorable="d" WindowStartupLocation="CenterScreen"
+        Title="MainWindow" Height="300" Width="500">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="Auto" />
+        </Grid.ColumnDefinitions>
+
+        <StackPanel>
+            <TextBox Text="{Binding SelectedUser.Name}" Margin="0,5,0,0" />
+            <TextBox Text="{Binding SelectedUser.LastName}"  Margin="0,5,0,0"/>
+            <TextBox Text="{Binding SelectedUser.bio}" Margin="0,5,0,0"/>
+            <TextBox Text="{Binding SelectedUser.foo}" Margin="0,5,0,0"/>
+            <TextBox Text="{Binding SelectedUser.bar}" Margin="0,5,0,0"/>
+
+            <ListView Name="UsersList" ItemsSource="{Binding Users}" SelectedItem="{Binding SelectedUser}">
+                <ListView.View>
+                    <GridView>
+                        <GridView.Columns>
+                            <GridViewColumn Header="Name" DisplayMemberBinding="{Binding Name}"/>
+                            <GridViewColumn Header="Last Name" DisplayMemberBinding="{Binding LastName}"/>
+                            <GridViewColumn Header="Foo" DisplayMemberBinding="{Binding foo}"/>
+                            <GridViewColumn Header="Bar" DisplayMemberBinding="{Binding bar}"/>
+                            <GridViewColumn Header="Bio" DisplayMemberBinding="{Binding bio}"/>
+                        </GridView.Columns>
+                    </GridView>
+                </ListView.View>
+            </ListView>
+            
+        </StackPanel>
+        <StackPanel Grid.Column="1" Margin="5">
+            <Button Name="EvoqueBtb" Content="{Binding About, Source={StaticResource Lang}}" Margin="0,0,0,2" Click="EvoqueBtb_Click" />
+            <Button Name="ManageBtn" Content="{Binding Home, Source={StaticResource Lang}}"  Margin="0,0,0,2" Click="ManageBtn_Click"/>
+            <Button Name="AddBtn" Content="{Binding View, Source={StaticResource Lang}}"  Margin="0,0,0,2" Click="AddBtn_Click"/>
+            <Button Name="ReadBtn" Content="{Binding Help, Source={StaticResource Lang}}"  Margin="0,0,0,2" Click="ReadBtn_Click"/>
+
+            <ComboBox x:Name="LangField" ItemsSource="{Binding Langs}" Margin="0,15,0,0" SelectionChanged="LangField_SelectionChanged"/>
+        </StackPanel>
+    </Grid>
+</Window>
